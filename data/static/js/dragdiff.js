@@ -4,15 +4,15 @@ $(document).ready(function(){
     $(".difflink").droppable({
          accept: ".difflink",
          drop: function(ev, ui) {
-            var targetOrder = parseInt($(this).attr("order"));
-            var sourceOrder = parseInt($(ui.draggable).attr("order"));
-            var diffurl = $(this).attr("diffurl");
+            var targetOrder = parseInt($(this).attr("data-order"));
+            var sourceOrder = parseInt($(ui.draggable).attr("data-order"));
+            var diffurl = $(this).attr("data-diffurl");
             if (targetOrder < sourceOrder) {
-                var fromRev = $(this).attr("revision");
-                var toRev   = $(ui.draggable).attr("revision");
+                var fromRev = $(this).attr("data-revision");
+                var toRev   = $(ui.draggable).attr("data-revision");
             } else {
-                var toRev   = $(this).attr("revision");
-                var fromRev = $(ui.draggable).attr("revision");
+                var toRev   = $(this).attr("data-revision");
+                var fromRev = $(ui.draggable).attr("data-revision");
             };
             location.href = diffurl + '?from=' + fromRev + '&to=' + toRev;
             }
