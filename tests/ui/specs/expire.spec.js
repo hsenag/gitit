@@ -11,3 +11,18 @@ test('Ctrl+R posts to the expire handler for the current page', async ({ page })
   ]);
   expect(new URL(request.url()).pathname).toBe('/_expire/Footnotes');
 });
+
+test('other keys do not expire the page', async ({ page }) => {
+  await page.goto('/Footnotes');
+
+  // Without the hotkeys plugin, bind("keydown", "ctrl+r", ...) would treat
+  // "ctrl+r" as event data and fire on every key press.
+  const expires = [];
+  page.on('request', (r) => {
+    if (r.url().includes('/_expire/')) expires.push(r.url());
+  });
+  await page.keyboard.press('r');
+  await page.keyboard.press('Control+e');
+  await page.waitForTimeout(500);
+  expect(expires).toEqual([]);
+});
