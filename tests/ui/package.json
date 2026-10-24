@@ -1,0 +1,11 @@
+{
+  "name": "gitit-ui-tests",
+  "private": true,
+  "description": "Browser tests for gitit's jQuery-based UI",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0"
+  }
+}
