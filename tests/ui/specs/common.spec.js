@@ -24,7 +24,7 @@ for (const path of pages) {
       footnotes: typeof window.Footnotes,
     }));
     expect(info).toEqual({
-      jquery: '1.2.6',
+      jquery: '4.0.0',
       draggable: 'function',
       droppable: 'function',
       footnotes: 'object',

@@ -1,0 +1,12 @@
+{
+  "name": "gitit-vendor-js",
+  "private": true,
+  "description": "Builds gitit's minified third-party JavaScript from vendored sources",
+  "scripts": {
+    "build": "node build.js",
+    "check": "node build.js --check"
+  },
+  "devDependencies": {
+    "terser": "5.51.2"
+  }
+}

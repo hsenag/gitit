@@ -37,12 +37,19 @@ author:              John MacFarlane
 maintainer:          jgm@berkeley.edu
 bug-reports:         http://github.com/jgm/gitit/issues
 stability:           experimental
-extra-source-files:  data/static/js/jquery-1.2.6.js
-                     data/static/js/jquery.hotkeys-0.7.9.js
-                     data/static/js/jquery-ui.core-1.6rc2.js
-                     data/static/js/jquery-ui.droppable-1.6rc2.js
-                     data/static/js/jquery-ui.draggable-1.6rc2.js
-                     data/static/js/jquery-ui.tabs-1.6rc2.js
+extra-source-files:  vendor/README.md
+                     vendor/build.js
+                     vendor/package.json
+                     vendor/package-lock.json
+                     vendor/jquery-4.0.0/LICENSE.txt
+                     vendor/jquery-4.0.0/AUTHORS.txt
+                     vendor/jquery-4.0.0/dist/jquery.js
+                     vendor/jquery-ui-1.14.2/LICENSE.txt
+                     vendor/jquery-ui-1.14.2/AUTHORS.txt
+                     vendor/jquery-ui-1.14.2/ui/*.js
+                     vendor/jquery-ui-1.14.2/ui/widgets/*.js
+                     vendor/jquery-hotkeys-0.2.2/README.md
+                     vendor/jquery-hotkeys-0.2.2/jquery-hotkeys.js
 extra-doc-files:     CHANGES, YUI-LICENSE, BLUETRIP-LICENSE, TANGOICONS
 data-files:          data/static/css/screen.css, data/static/css/print.css,
                      data/static/css/ie.css, data/static/css/highlighting.css,
@@ -50,9 +57,9 @@ data-files:          data/static/css/screen.css, data/static/css/print.css,
                      data/static/css/custom.css,
                      data/static/img/logo.png, data/static/img/icons/feed.png,
                      data/static/img/icons/folder.png, data/static/img/icons/page.png,
-                     data/static/js/dragdiff.js, data/static/js/jquery-1.2.6.min.js,
-                     data/static/js/uploadForm.js, data/static/js/jquery-ui-combined-1.6rc2.min.js,
-                     data/static/js/jquery.hotkeys-0.7.9.min.js,
+                     data/static/js/dragdiff.js, data/static/js/jquery-4.0.0.min.js,
+                     data/static/js/uploadForm.js, data/static/js/jquery-ui-1.14.2.custom.min.js,
+                     data/static/js/jquery.hotkeys-0.2.2.min.js,
                      data/static/js/preview.js, data/static/js/search.js,
                      data/static/js/footnotes.js,
                      data/static/robots.txt,

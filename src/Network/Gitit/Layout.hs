@@ -81,7 +81,7 @@ filledPageTemplate base' cfg layout htmlContents templ =
                            'h':'t':'t':'p':_  -> x
                            _                  -> base' ++ "/js/" ++ x
 
-      scripts  = ["jquery-1.2.6.min.js", "jquery-ui-combined-1.6rc2.min.js", "footnotes.js"] ++ pgScripts layout
+      scripts  = ["jquery-4.0.0.min.js", "jquery-ui-1.14.2.custom.min.js", "footnotes.js"] ++ pgScripts layout
       scriptLink x = script ! src (fromString $  prefixedScript x) !
         type_ "text/javascript" $ mempty
       javascriptlinks = renderHtml $ mconcat $ map scriptLink scripts
