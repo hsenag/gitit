@@ -1,7 +1,7 @@
 cabal.sandbox.config
 TAGS
-dist
-dist-newstyle
+/dist/
+/dist-newstyle/
 wikidata
 templates
 ./static/
